@@ -1,15 +1,13 @@
+
+
+
+
 export interface VisaType {
   visa_type_id: string,
   base_price: number,
   visa_type_label: string,
-  extra_cost_ids: string[]
-}
-
-
-export interface ExtraCost {
-  extra_cost_id: string,
-  cost: number,
-  label: string
+  extra_cost_ids: string[],
+  is_e_visa: boolean
 }
 
 export interface VisaKit {
@@ -20,3 +18,24 @@ export interface VisaKit {
   visa_types: Record<string, VisaType> // string is visa_type_id
   extra_costs: Record<string, ExtraCost>
 }
+
+export interface ChosenExtraCosts {
+  //number is cost at time of submission, so changed costs do not affect past submissions
+  [extra_cost_id: string]: number
+}
+
+export interface ExtraCost {
+  extra_cost_id: string,
+  cost: number,
+  label: string
+}
+
+
+export interface Address {
+  line_1: string,
+  line_2: string,
+  city: string,
+  state: string,
+  zip: string,
+}
+
