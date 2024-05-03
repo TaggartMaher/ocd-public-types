@@ -10,5 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "typescript": "^5.4.5"
+  },
+  "repository": "https://github.com/TaggartMaher/ocd-public-types.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
