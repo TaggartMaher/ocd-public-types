@@ -1,5 +1,5 @@
 {
-  "name": "ocd-public-types",
+  "name": "@taggartmaher/ocd-public-types",
   "version": "1.0.0",
   "description": "Linked public types for a multi-repo setup while maintaining type syncronization;",
   "main": "index.js",
@@ -13,6 +13,6 @@
   },
   "repository": "https://github.com/TaggartMaher/ocd-public-types.git",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "@TaggartMaher/registry": "https://npm.pkg.github.com"
   }
 }

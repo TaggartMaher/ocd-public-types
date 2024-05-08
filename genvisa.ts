@@ -7,7 +7,9 @@ export interface VisaType {
   base_price: number,
   visa_type_label: string,
   extra_cost_ids: string[],
-  is_e_visa: boolean
+  is_e_visa: boolean,
+  country_code: string,
+  extra_required_documents: string[]
 }
 
 export interface VisaKit {
@@ -39,3 +41,21 @@ export interface Address {
   zip: string,
 }
 
+
+export interface TravelDocument {
+  submission_id: string,
+  time_uploaded: string,
+  travel_document_id: string,
+  archived: boolean,
+  title: string,
+  notes: string,
+  author: string
+}
+export interface ActivityLog {
+  submission_id: string,
+  log_id: string,
+  time: string,
+  author: string,
+  info_type: string,
+  info: string
+}
