@@ -6,19 +6,21 @@ export interface VisaType {
   visa_type_id: string,
   base_price: number,
   visa_type_label: string,
-  extra_cost_ids: string[],
+  extra_cost_ids: string[], //used for server to obtain all the extra cost metadata
   is_e_visa: boolean,
   country_code: string,
-  extra_required_documents: string[]
+  extra_required_documents: string[] | null,
+  common_question_ids: string[] | null
 }
 
 export interface VisaKit {
   kit_id: string,
   required_visa_ids: string[],
   extension_visa_ids: string[],
-  kit_label: string,
+  kit_label: string;
   visa_types: Record<string, VisaType> // string is visa_type_id
-  extra_costs: Record<string, ExtraCost>
+  extra_costs: Record<string, ExtraCost>;
+  required_extra_costs: string[];
 }
 
 export interface ChosenExtraCosts {
