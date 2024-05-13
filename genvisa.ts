@@ -41,6 +41,7 @@ export interface Address {
   city: string,
   state: string,
   zip: string,
+  country_code: string
 }
 
 
@@ -60,4 +61,11 @@ export interface ActivityLog {
   author: string,
   info_type: string,
   info: string
+}
+
+export interface FetchTableOptions {
+  currentPage: number;
+  pageSize: number;
+  filterOption: string;
+  searchQuery?: string | undefined;
 }
