@@ -31,7 +31,8 @@ export interface ChosenExtraCosts {
 export interface ExtraCost {
   extra_cost_id: string,
   cost: number,
-  label: string
+  label: string,
+  combines_with: string | null | undefined;
 }
 
 
