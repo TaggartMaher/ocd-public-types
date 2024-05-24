@@ -1,7 +1,3 @@
-
-
-
-
 export interface VisaType {
   visa_type_id: string,
   base_price: number,
