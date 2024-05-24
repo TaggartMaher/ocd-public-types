@@ -1,7 +1,7 @@
 {
   "name": "@taggartmaher/ocd-public-types",
   "packageManager": "pnpm@9.1.2",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Linked public types for a multi-repo setup while maintaining type syncronization;",
   "main": "index.js",
   "scripts": {

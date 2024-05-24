@@ -65,4 +65,5 @@ export interface FetchTableOptions {
   pageSize: number;
   filterOption: string;
   searchQuery?: string | undefined;
+  includeDrafts?: boolean;
 }
