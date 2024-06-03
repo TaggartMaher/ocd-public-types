@@ -7,6 +7,7 @@ export interface VisaType {
   country_code: string,
   extra_required_documents: string[] | null,
   common_question_ids: string[] | null
+  custom_visa_type: boolean,
 }
 
 export interface VisaKit {
