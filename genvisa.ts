@@ -18,6 +18,7 @@ export interface VisaKit {
   visa_types: Record<string, VisaType> // string is visa_type_id
   extra_costs: Record<string, ExtraCost>;
   required_extra_costs: string[];
+  custom_kit: boolean;
 }
 
 export interface ChosenExtraCosts {
@@ -58,7 +59,8 @@ export interface ActivityLog {
   time: string,
   author: string,
   info_type: string,
-  info: string
+  info: string,
+  important: boolean
 }
 
 export interface FetchTableOptions {
