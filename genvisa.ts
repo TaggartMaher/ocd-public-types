@@ -51,7 +51,8 @@ export interface TravelDocument {
   archived: boolean,
   title: string,
   notes: string,
-  author: string
+  author: string,
+  document_progress_state: number;
 }
 export interface ActivityLog {
   submission_id: string,
