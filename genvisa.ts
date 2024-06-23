@@ -70,4 +70,14 @@ export interface FetchTableOptions {
   filterOption: string;
   searchQuery?: string | undefined;
   includeDrafts?: boolean;
+  table_type?: 'UNCLAIMED_NEW' | 'UNCLAIMED_VALIDATED' | 'UNCLAIMED_ALL' | 'TODO';
+  includeCompleted?: boolean
+}
+
+export interface GroupMember {
+  submission_id: string;
+  customer_first_name: string;
+  customer_middle_name: string;
+  customer_last_name: string;
+  trip_date_of_departure: Date;
 }
