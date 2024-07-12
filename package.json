@@ -1,7 +1,7 @@
 {
   "name": "@taggartmaher/ocd-public-types",
-  "packageManager": "pnpm@9.4.0",
-  "version": "1.1.7",
+  "packageManager": "pnpm@9.5.0",
+  "version": "1.1.71",
   "description": "Linked public types for a multi-repo setup while maintaining type syncronization;",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "typescript": "^5.4.5"
+    "typescript": "^5.5.3"
   },
   "repository": "https://github.com/TaggartMaher/ocd-public-types.git",
   "publishConfig": {
