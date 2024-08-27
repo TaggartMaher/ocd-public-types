@@ -71,7 +71,10 @@ export interface FetchTableOptions {
   searchQuery?: string | undefined;
   includeDrafts?: boolean;
   table_type?: 'UNCLAIMED_NEW' | 'UNCLAIMED_VALIDATED' | 'UNCLAIMED_ALL' | 'TODO';
-  includeCompleted?: boolean
+  includeCompleted?: boolean;
+  minDate?: Date | null,
+  maxDate?: Date | null,
+  alpha_2_country_codes?: string[] | null;
 }
 
 export interface GroupMember {
